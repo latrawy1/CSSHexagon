@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>CSS3</title> 
+  <style type="text/css">        
+.box-wrapper { margin: 5em 1em 1em; border: solid 1px silver; padding: 3.2em 0; }
+.row { margin: -1.6em 0; text-align: center; }
+.hexagon {
+    display: inline-block;
+    overflow: hidden;
+    width: 8em; height: 8em;
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+.hexagon a {
+    display: block;
+    height: 100%;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg) scaleX(.866);
+    background: gainsboro;
+}   
+</style>
+
+ </head>
+ <body> 
+  <div class='box-wrapper'>
+    <div class='row'>
+        <div class='hexagon'><a href='#'></a></div>
+        <!--and so on, more hexagons-->
+    </div>
+    <!--and so on, more rows-->
+</div>
+ </body>
+</html>
