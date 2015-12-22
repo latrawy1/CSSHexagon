@@ -35,5 +35,8 @@ we use background:inherited   to inherit the background and make it looks like o
 
 it make a demo called [index2.html] at the root folder
 
+### use transform to create
+this also takes advantage of overflow:hidden, but it doesnt need many div. the demo is in [index3.html]
+
 ## Future
 it is hard for i to do further research. but i will try my best to realize the effect in demo.jpg
