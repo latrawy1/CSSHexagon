@@ -1,0 +1,208 @@
+﻿<html>
+
+<head>
+<title>test</title>
+
+<style type="text/css">
+
+.container{
+	width:1280px;
+	
+	margin:20px auto;
+}
+.row{
+	width:100%;
+}
+
+.hexagon-box{
+	width: 100px;
+	height: 173px;
+}
+.hexagon-padding1,.hexagon-padding2{
+	width: 100%;
+	height: 100%;
+	//margin:5px 0 px;
+}
+.hexagon-box{
+	position:relative;
+	background-image:url('img/5.jpg');
+	background-position:center;
+	float:left;
+	backface-visibility:hidden;
+	background-repeat:no-repeat;
+	background-size:cover;
+	zoom:1;
+	margin:1px 110px;
+	border-top:2px solid blue;
+	border-bottom:2px solid blue;
+	text-align:center;
+}
+	
+.hexagon-padding1,.hexagon-padding2{
+	border-top:2px solid blue;
+	border-bottom:2px solid blue;
+	background-position:center ;
+	background-size:contain;
+	background:inherit;
+	position:absolute;
+	top:-2px;
+	left:0;
+	z-index:-2;
+	overflow:hidden;
+	backface-visibility:hidden;
+}
+
+.hexagon-padding1{
+	-webkit-transform: rotate(-120deg);
+}
+.hexagon-padding1:before{
+	transform:rotate(120deg) ;
+		bottom:0;
+}
+
+.hexagon-padding2{
+	-webkit-transform: rotate(-60deg);
+	z-index:2;
+}
+
+.hexagon-padding2::before{
+	transform:rotate(60deg);
+	bottom:0;
+}
+
+.hexagon-padding1:before , .hexagon-padding2:before{
+	width:100%;
+	height:100%;
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	background:inherit;
+	backface-visibility:hidden;
+	background-repeat:no-repeat;
+}
+
+.hexagon-addmargin{
+	//margin-left:150px;
+}
+
+.hexagon-addmarginhead{
+	margin-left:270px;
+}
+
+.secondRow > div{
+	top:-86px;
+}
+
+.thirdRow > div{
+	top:-173px;
+}
+
+.fourthRow > div{
+	top: -259px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+	</div>
+	<div class="row secondRow">
+		<div class="hexagon-box hexagon-addmarginhead">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+	</div>
+	<div class="row thirdRow">
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+	</div>
+	
+	<div class="row fourthRow">
+		<div class="hexagon-box hexagon-addmarginhead">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+		<div class="hexagon-box">
+			<div class="hexagon-padding1">
+			</div>
+			<div class="hexagon-padding2">	
+			</div>
+		</div>
+	</div>
+</div>
+
+		
+</body>
+</html>
